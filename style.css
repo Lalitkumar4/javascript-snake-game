@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
+/* root variable */
+:root {
+  --primary-color: lime;
+  --secondary-color: lightgoldenrodyellow;
+  --background-color: black;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--background-color);
+  text-align: center;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+}
+
+/* canvas board */
+.board {
+  border: 2px solid white;
+}
+
+/* main score */
+.score {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.sound-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* pause */
+.pause {
+  font-family: "Roboto Condensed", sans-serif;
+  position: absolute;
+  display: none;
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+/* game over instruct*/
+.game-over-instruct {
+  position: absolute;
+  color: var(--secondary-color);
+  display: none;
+}
+
+.game-over-instruct h1 {
+  font-size: "Courier New", Courier, monospace;
+  font-size: 4.4rem;
+  margin: 0;
+}
+
+.game-over-instruct span {
+  font-size: 4rem;
+}
+
+.game-over-instruct p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* speed instruct */
+.speed-instruct {
+  position: absolute;
+  display: block;
+}
+
+.speed-instruct p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* select */
+.speed-select {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+

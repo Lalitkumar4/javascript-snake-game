@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Snake Game</title>
+  </head>
+  <body>
+    <!-- main score -->
+    <p id="score" class="score">Score:<span id="counter">0</span></p>
+
+    <span id="soundIcon" class="sound-icon"
+      ><i class="fa-solid fa-volume-high"></i
+    ></span>
+
+    <!-- speed container -->
+    <div class="speed-instruct" id="speedInstruct">
+      <p>Select speed to start the Game 🐍</p>
+      <!-- select speed -->
+      <select id="speedSelect" class="speed-select">
+        <!-- speed options -->
+        <option disabled selected>Select Speed</option>
+        <option value="5">Slow 🐢</option>
+        <option value="10">Normal 🛴</option>
+        <option value="15">Fast 🚘</option>
+        <option value="25">Speedy 🚀</option>
+      </select>
+    </div>
+
+    <!-- canvas board -->
+    <canvas id="board" class="board"></canvas>
+
+    <audio id="bite" src="./sounds/bite.mp3"></audio>
+    <audio id="hit" src="./sounds/hit.mp3"></audio>
+    <audio id="backgroundSound" src="./sounds/background.mp3" loop></audio>
+
+    <!-- pause -->
+    <div class="pause" id="pause">
+      <h1>Game Paused</h1>
+    </div>
+
+    <!-- game over instructions -->
+    <div class="game-over-instruct" id="gameOverInstruct">
+      <h1>Game Over</h1>
+      <span id="counterTwo">0</span>
+      <p>Press 'R' to restart</p>
+    </div>
+
+    <!-- Instruction to pause and resume -->
+    <p>Press 'SPACEBAR' to PAUSE / RESUME</p>
+    <p>Press the arrow keys to start moving the snake</p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
