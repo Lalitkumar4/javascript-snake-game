@@ -2,6 +2,8 @@
 
 JavaScript and HTML5 Canvas were used to create this Snake game. You control a snake that moves around the board, Keep your distance from the walls and from yourself to avoid collisions.
 
+![Screenshot 2024-02-07 114333](https://github.com/Lalitkumar4/javascript-snake-game/assets/64465383/2164951f-8d0a-425c-9748-76fcce0622b6)
+
 [Play Game](https://lalitkumar4.github.io/javascript-snake-game/)
 
 ## How to Play
